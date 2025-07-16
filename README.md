@@ -25,8 +25,14 @@ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:54
 Run a local Pinecone instance using Docker:
 
 ```bash
-docker run -it -p 8000:8000 --env-file .env pinecone/pinecone-emulator:latest
-```
+docker run --name travel-postgres \
+  -e POSTGRES_DB=postgres \
+  -e POSTGRES_USER=admin \
+  -e POSTGRES_PASSWORD=admin \
+  -p 5432:5432 \
+  -v pg_travel_data:/var/lib/postgresql/data \
+  -d postgres:latest
+  ```
 
 ### 4. Create .env file
 
