@@ -51,3 +51,10 @@ PG_USER=postgres
 PG_PASSWORD=mysecretpassword
 PG_DB=postgres
 ```
+### 5. Run the application
+
+Run the application with the following commands
+
+```
+python -m uvicorn main:app --reload
+```
