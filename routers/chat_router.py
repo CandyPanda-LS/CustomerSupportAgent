@@ -8,7 +8,7 @@ chat_service = ChatService()
 
 
 @router.post(
-    "/generate/llm/openAi",
+    "/generate/chat/customer_support_agent",
     tags=["Customer support agent"],
     description="Flight agent that can answer questions about flights, hotels, and car rentals using OpenAI's chat model.",
 )
