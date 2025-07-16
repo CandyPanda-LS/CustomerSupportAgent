@@ -1,0 +1,15 @@
+{
+"SELECT \n    t.ticket_no, t.book_ref,\n    f.flight_id, f.flight_no, f.departure_airport, f.arrival_airport, \n    f.scheduled_departure, f.scheduled_arrival,\n    bp.seat_no, tf.fare_conditions\nFROM \n    tickets t\n    JOIN ticket_flights tf ON t.ticket_no = tf.ticket_no\n    JOIN flights f ON tf.flight_id = f.flight_id\n    JOIN boarding_passes bp ON bp.ticket_no = t.ticket_no AND bp.flight_id = f.flight_id\nWHERE \n    t.passenger_id = '3442 587242'": [
+	{
+		"ticket_no" : "7240005432906569",
+		"book_ref" : "C46E9F",
+		"flight_id" : 19250,
+		"flight_no" : "LX0112",
+		"departure_airport" : "CDG",
+		"arrival_airport" : "BSL",
+		"scheduled_departure" : "2025-07-17T01:55:30.009Z",
+		"scheduled_arrival" : "2025-07-17T03:25:30.009Z",
+		"seat_no" : "18E",
+		"fare_conditions" : "Economy"
+	}
+]}

@@ -59,11 +59,10 @@ class ChatService:
         return builder.compile(checkpointer=memory)
 
     def generate_response(self, request: ChatRequest) -> str:
-        thread_id = str(uuid.uuid4())
         config = {
             "configurable": {
                 "passenger_id": request.passenger_id,
-                "thread_id": thread_id,
+                "thread_id": request.session_id,
             }
         }
 

@@ -50,14 +50,14 @@ CREATE_BOARDING_PASS = """
     INSERT INTO boarding_passes (ticket_no, flight_id, seat_no, boarding_no)
     VALUES (:ticket_no, :new_flight_id, 
             'A' || (random()*100)::int::text, 
-            (random()*1000)::int::text)
+            (random()*1000)::int)
 """
 
 DELETE_TICKET_FLIGHT = "DELETE FROM ticket_flights WHERE ticket_no = :ticket_no"
 
 # Hotel Tools
 SEARCH_HOTELS_BASE = "SELECT * FROM hotels WHERE 1=1"
-BOOK_HOTEL = "UPDATE hotels SET booked = TRUE WHERE id = :hotel_id RETURNING id"
+BOOK_HOTEL = "UPDATE hotels SET booked = 1 WHERE id = :hotel_id RETURNING id"
 UPDATE_HOTEL_CHECK = "SELECT id FROM hotels WHERE id = :hotel_id"
 UPDATE_HOTEL_BASE = "UPDATE hotels SET {updates} WHERE id = :hotel_id RETURNING id"
 CANCEL_HOTEL = "UPDATE hotels SET booked = FALSE WHERE id = :hotel_id RETURNING id"

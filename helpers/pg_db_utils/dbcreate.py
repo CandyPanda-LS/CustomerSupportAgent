@@ -170,6 +170,6 @@ def migrate_to_postgresql(sqlite_db):
 
 
 if __name__ == "__main__":
-    # db_file = download_database()
+    db_file = download_database()
     updated_db = update_dates(local_file)
     migrate_to_postgresql(updated_db)

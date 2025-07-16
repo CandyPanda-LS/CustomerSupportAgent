@@ -1,0 +1,99 @@
+{
+"-- 2\nSELECT * FROM flights WHERE 1=1 \nAND departure_airport = 'CDG' \nAND arrival_airport = 'BSL'\nAND scheduled_departure >= '2025-07-16T00:00:00Z'\nAND scheduled_departure <= '2025-07-23T23:59:59Z'": [
+	{
+		"flight_id" : 19275,
+		"flight_no" : "LX0112",
+		"scheduled_departure" : "2025-07-16T01:55:30.009Z",
+		"scheduled_arrival" : "2025-07-16T03:25:30.009Z",
+		"departure_airport" : "CDG",
+		"arrival_airport" : "BSL",
+		"status" : "Arrived",
+		"aircraft_code" : "SU9",
+		"actual_departure" : "2025-07-16T01:58:30.009Z",
+		"actual_arrival" : "2025-07-16T03:28:30.009Z"
+	},
+	{
+		"flight_id" : 19250,
+		"flight_no" : "LX0112",
+		"scheduled_departure" : "2025-07-17T01:55:30.009Z",
+		"scheduled_arrival" : "2025-07-17T03:25:30.009Z",
+		"departure_airport" : "CDG",
+		"arrival_airport" : "BSL",
+		"status" : "On Time",
+		"aircraft_code" : "SU9",
+		"actual_departure" : null,
+		"actual_arrival" : null
+	},
+	{
+		"flight_id" : 19233,
+		"flight_no" : "LX0112",
+		"scheduled_departure" : "2025-07-18T01:55:30.009Z",
+		"scheduled_arrival" : "2025-07-18T03:25:30.009Z",
+		"departure_airport" : "CDG",
+		"arrival_airport" : "BSL",
+		"status" : "On Time",
+		"aircraft_code" : "SU9",
+		"actual_departure" : null,
+		"actual_arrival" : null
+	},
+	{
+		"flight_id" : 19287,
+		"flight_no" : "LX0112",
+		"scheduled_departure" : "2025-07-19T01:55:30.009Z",
+		"scheduled_arrival" : "2025-07-19T03:25:30.009Z",
+		"departure_airport" : "CDG",
+		"arrival_airport" : "BSL",
+		"status" : "Scheduled",
+		"aircraft_code" : "SU9",
+		"actual_departure" : null,
+		"actual_arrival" : null
+	},
+	{
+		"flight_id" : 19265,
+		"flight_no" : "LX0112",
+		"scheduled_departure" : "2025-07-20T01:55:30.009Z",
+		"scheduled_arrival" : "2025-07-20T03:25:30.009Z",
+		"departure_airport" : "CDG",
+		"arrival_airport" : "BSL",
+		"status" : "Scheduled",
+		"aircraft_code" : "SU9",
+		"actual_departure" : null,
+		"actual_arrival" : null
+	},
+	{
+		"flight_id" : 19232,
+		"flight_no" : "LX0112",
+		"scheduled_departure" : "2025-07-21T01:55:30.009Z",
+		"scheduled_arrival" : "2025-07-21T03:25:30.009Z",
+		"departure_airport" : "CDG",
+		"arrival_airport" : "BSL",
+		"status" : "Scheduled",
+		"aircraft_code" : "SU9",
+		"actual_departure" : null,
+		"actual_arrival" : null
+	},
+	{
+		"flight_id" : 19284,
+		"flight_no" : "LX0112",
+		"scheduled_departure" : "2025-07-22T01:55:30.009Z",
+		"scheduled_arrival" : "2025-07-22T03:25:30.009Z",
+		"departure_airport" : "CDG",
+		"arrival_airport" : "BSL",
+		"status" : "Scheduled",
+		"aircraft_code" : "SU9",
+		"actual_departure" : null,
+		"actual_arrival" : null
+	},
+	{
+		"flight_id" : 19252,
+		"flight_no" : "LX0112",
+		"scheduled_departure" : "2025-07-23T01:55:30.009Z",
+		"scheduled_arrival" : "2025-07-23T03:25:30.009Z",
+		"departure_airport" : "CDG",
+		"arrival_airport" : "BSL",
+		"status" : "Scheduled",
+		"aircraft_code" : "SU9",
+		"actual_departure" : null,
+		"actual_arrival" : null
+	}
+]}
